@@ -1,0 +1,25 @@
+C:\ZGRUPO86\ARQSI Grupo 86\GClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\ZGRUPO86\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.dll
+C:\ZGRUPO86\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.pdb
+C:\ZGRUPO86\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.dll
+C:\ZGRUPO86\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.pdb
+C:\Users\Ana Santos\Desktop\Trabalho ARQSIS\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.dll
+C:\Users\Ana Santos\Desktop\Trabalho ARQSIS\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.pdb
+C:\Users\Ana Santos\Desktop\Trabalho ARQSIS\ARQSI Grupo 86\GClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ana Santos\Desktop\Trabalho ARQSIS\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.dll
+C:\Users\Ana Santos\Desktop\Trabalho ARQSIS\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.pdb
+C:\LULZ\FINAL\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.dll
+C:\LULZ\FINAL\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.pdb
+C:\LULZ\FINAL\ARQSI Grupo 86\GClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\LULZ\FINAL\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.dll
+C:\LULZ\FINAL\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.pdb
+C:\Users\Cris\Desktop\ARQSI86\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.dll
+C:\Users\Cris\Desktop\ARQSI86\ARQSI Grupo 86\GClassLibrary\bin\Debug\GClassLibrary.pdb
+C:\Users\Cris\Desktop\ARQSI86\ARQSI Grupo 86\GClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Cris\Desktop\ARQSI86\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.dll
+C:\Users\Cris\Desktop\ARQSI86\ARQSI Grupo 86\GClassLibrary\obj\Debug\GClassLibrary.pdb
+C:\Users\Cris\Desktop\APRESENTACAO\GClassLibrary\bin\Debug\GClassLibrary.dll
+C:\Users\Cris\Desktop\APRESENTACAO\GClassLibrary\bin\Debug\GClassLibrary.pdb
+C:\Users\Cris\Desktop\APRESENTACAO\GClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Cris\Desktop\APRESENTACAO\GClassLibrary\obj\Debug\GClassLibrary.dll
+C:\Users\Cris\Desktop\APRESENTACAO\GClassLibrary\obj\Debug\GClassLibrary.pdb

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GWS.master.cs" Inherits="GWS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main">
+        <div class="main_start">
+            <div class="login">
+                <asp:Button ID="btnLogOut" runat="server" Text="Logout" Visible="false" 
+                    onclick="btnLogOut_Click" />
+                <br />
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="main_global_section">
+                <div id="wrapper">
+                    <div id="menu">
+                        <asp:TreeView ID="TreeView1" runat="server" ImageSet="Simple" NodeIndent="10" 
+                            DataSourceID="SiteMapDataSource1">
+                            <ParentNodeStyle Font-Bold="False" />
+                            <HoverNodeStyle Font-Underline="True" ForeColor="#DD5555" />
+                            <SelectedNodeStyle Font-Underline="True" ForeColor="#DD5555" HorizontalPadding="0px"
+                                VerticalPadding="0px" />
+                            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px"
+                                NodeSpacing="0px" VerticalPadding="0px" />
+                        </asp:TreeView>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    </div>
+                    <div id="content">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+        </div>
+        <div class="main_end">
+        </div>
+        <div id="footer">
+            ARQSI Grupo 86 - Ana Santos - Carlos Sousa</div>
+    </div>
+    <div>
+    </div>
+    </form>
+</body>
+</html>

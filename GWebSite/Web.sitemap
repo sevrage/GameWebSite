@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home" description="">  
+    
+    <siteMapNode url="zuser\PesquisaMapa.aspx" title="Pesquisar Mapa"  description="" />
+    <siteMapNode url="zuser\JogosRealizados.aspx" title="Jogos Realizados"  description="" />
+    <siteMapNode url="zuser\Download.aspx" title="Download"  description="" />
+    <siteMapNode url="zuser\ActualizarDados.aspx" title="Actualizar Dados"  description="" />
+   
+    <siteMapNode url="zadmin\Listar.aspx" title="Listar"  description="" />
+    <siteMapNode url="zadmin\Mapas.aspx" title="Admin Mapas"  description="" />
+    <siteMapNode url="zadmin\Scores.aspx" title="Scores"  description="" />
+    <siteMapNode url="zadmin\PesquisaDB.aspx" title="Pesquisar DB"  description="" />  
+    <siteMapNode url="zadmin\PesquisaPais.aspx" title="Pesquisar Pais"  description="" />
+    <siteMapNode url="zadmin\Utilizadores.aspx" title="Admin Users"  description="" />
+    <siteMapNode url="zadmin\ExportarXML.aspx" title="Criar XML"  description="" />    
+    <siteMapNode url="zadmin\EncDecrypt.aspx" title="Encrypt Conf"  description="" />
+  </siteMapNode>
+</siteMap>

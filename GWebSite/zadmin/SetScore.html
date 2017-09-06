@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>GWebService Test Client</title>
+<script language="javascript"  type="text/javascript">
+
+function validate(tid){    
+  // Validar a Introdução dos Dados
+  //  Pagina PHP de destino 
+  http.open("POST", "http://127.0.0.1/validate.php", true);
+  http.tid = "c"+tid;
+  http.onreadystatechange = getHttpResVal;
+
+  // Parametros do POST
+  var params = tid+ "=" + encodeURI(document.getElementById(tid).value);
+  
+  // POST header
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  http.setRequestHeader("Content-length", params.length);
+  http.setRequestHeader("Connection", "close");
+
+  // Enviar Parametros
+  http.send(params);
+}
+
+function getHttpResVal() {
+  if (http.readyState == 4 && http.status == 200) { 
+    res = http.responseText;  // Resposta e update da pagina
+    document.getElementById(http.tid).innerHTML = res;
+  }
+}
+
+function insertScore()
+{
+	// Verificar que todos os Campos estão "OK"
+	var doReq=1;
+	var verify = ["cUserName","cPass","cPlayerID","cMapID","cScore","cDate"];
+
+	for (var i in verify){
+		if (document.getElementById(verify[i]).innerHTML!="OK"){
+			doReq=0;
+		}
+	}
+	if (doReq==1){
+		document.getElementById('status').innerHTML = "A Inserir...";
+		// Iniciar
+		scoreHttpRequest();
+	}
+	else{
+		document.getElementById('status').innerHTML = "ERRO: Existem Campos Mal Preenchidos!";
+	}
+}
+
+function scoreHttpRequest() 
+{
+	  //  Pagina PHP de destino
+	  http.open("POST", "http://127.0.0.1/SetScore.php", true);
+	  http.onreadystatechange = getHttpRes;
+
+	  // Parametros do POST
+	  var params = "UserName=" + encodeURI(document.getElementById("UserName").value)+
+		"&Pass=" + encodeURI(document.getElementById("Pass").value)+
+		"&PlayerID=" + encodeURI(document.getElementById("PlayerID").value)+
+		"&MapID=" + encodeURI(document.getElementById("MapID").value)+
+		"&Score=" + encodeURI(document.getElementById("Score").value)+
+		"&Date=" + encodeURI(document.getElementById("Date").value);
+
+	  // POST header
+	  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	  http.setRequestHeader("Content-length", params.length);
+		  http.setRequestHeader("Connection", "close");
+
+	  // Enviar Parametros
+	 http.send(params);
+}
+
+function getHttpRes( ) {
+  if (http.readyState == 4 && http.status == 200) { 
+    res = http.responseText;  // Resposta e update da pagina
+    document.getElementById('status').innerHTML = res;
+  }
+}
+
+function getXHTTP( ) {
+  var xhttp;
+   try {   // Encontrar o objecto XMLHTTP dos browsers
+      xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e2) {
+ 		 // Outros browsers...
+	    try {
+	      xhttp = new XMLHttpRequest();
+	    } catch (e3) {
+	      xhttp = false;
+	    }
+      }
+    }
+  return xhttp; // Retornar o objecto XMLHTTP
+}
+
+function clearText( ) {
+	// limpar as ciaxas de texto e avisos de erro
+    document.getElementById('UserName').value = '';
+    document.getElementById('Pass').value = '';
+    document.getElementById('PlayerID').value = '';
+	document.getElementById('MapID').value = '';
+    document.getElementById('Score').value = '';
+	document.getElementById('Date').value = '';	
+	
+	document.getElementById('status').innerHTML = '';
+	
+    document.getElementById('cUserName').innerHTML  = '* Introduza o UserName';
+    document.getElementById('cPass').innerHTML  = '* Introduza a PassWord (>7 caracters)';
+    document.getElementById('cPlayerID').innerHTML  = '* Introduza o ID do Jogador (int positivo)';
+	document.getElementById('cMapID').innerHTML = '* Introduza o ID do Mapa (int positivo)';
+    document.getElementById('cScore').innerHTML = '* Introduza a Pontuação (int positivo)';
+	document.getElementById('cDate').innerHTML  = '* Introduza a Data (yyyy-mm-dd hh:mm)';	
+}
+
+var http = getXHTTP(); // This executes when the page first loads.
+
+</script>
+
+</head>
+
+	<body>
+	
+		<h1>Registo de Resultados</h1>
+		<table>
+			<tr align="right">
+				<td align="right" bgcolor="lightgray">UserName:</td>
+				<td align="right"><input align="right" type="Text" value="" name="UserName" id="UserName" onkeyup="validate(this.id);"></td>
+				<td align="left"><font color="red" name="cUserName" id="cUserName">* Introduza o UserName</font></td>
+			</tr>
+			<tr align="right">
+				<td align="right" bgcolor="lightgray">Pass:</td>
+				<td align="right"><input align="right" type="Text" value="" name="Pass" id="Pass" onkeyup="validate(this.id);"></td>
+				<td align="left"><font color="red" name="cPass" id="cPass">* Introduza a PassWord (>7 caracters)</font></td>
+			</tr>
+			<tr>
+				<td align="right">PlayerID:</td>
+				<td align="right"><input align="right" type="Text" value="" name="PlayerID" id="PlayerID" onkeyup="validate(this.id);"></td>
+				<td align="left"><font color="red" name="cPlayerID" id="cPlayerID">* Introduza o ID do Jogador (int positivo)</font></td>
+			</tr>
+			<tr>
+				<td align="right">MapID:</td>
+				<td align="right"><input align="right" type="Text" value="" name="MapID" id="MapID" onkeyup="validate(this.id);"></td>
+				<td align="left"><font color="red" name="cMapID" id="cMapID">* Introduza o ID do Mapa (int positivo)</font></td>
+			</tr>		
+			<tr>
+				<td align="right">Score:</td>
+				<td align="right"><input align="right" type="Text" value="" name="Score" id="Score" onkeyup="validate(this.id);"></td>
+				<td align="left"><font color="red" name="cScore" id="cScore">* Introduza a Pontuação (int positivo)</font></td>	
+			</tr>
+			<tr>
+				<td align="right">Date:</td>
+				<td align="right"><input align="right" type = "Text" value="" name="Date" id="Date" onkeyup="validate(this.id);"></td>
+				<td align="left"><font color="red" name="cDate" id="cDate">* Introduza a Data (yyyy-mm-dd hh:mm)</font></td>	
+			</tr>
+			<tr>
+				<td></td>
+				<td align="center"><input type="button" value="Inserir" name="btn" onClick="insertScore();" ></td>
+				<td align="left"><input type="button" value="Limpar" name="btn" onClick="clearText();" ></td>
+				
+				<td></td>
+			</tr>
+			
+
+		</table>
+
+		<table>
+			<tr>
+				<td>Resposta: </td>
+				<td align="center" id="status" border=1></td>
+			</tr>
+		</table>
+
+
+	</body>
+</html>

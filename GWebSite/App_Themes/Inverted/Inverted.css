@@ -1,0 +1,150 @@
+﻿body
+{
+	background-color: #bba396;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	margin: 4px 4px 4px 4px;
+}
+
+div.main
+{
+	margin: auto;
+	padding-top: 10px;
+	width: 1022px;
+}
+div.tab
+{
+	
+}
+div.main_start
+{
+	background: url(mstart.png) no-repeat;
+	height: 100px;
+	width: 1022px;
+	
+}
+div.main_content
+{
+	background: #405a69 url(mmiddle.png) repeat-y;
+	float:left;
+	width: 1022px;
+}
+div.main_global_section
+{
+	margin: auto;
+	width: 980px;
+}
+div.main_end
+{
+	background: url(mend.png) no-repeat;
+	height: 35px;
+	width: 1023px;
+}
+div.space
+{
+	clear: both; 
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+div.content_top
+{
+	background: url(m0.png) no-repeat;
+	float:left;
+	font-size: 10pt;
+	font-weight: bold;
+	height: 23px;
+	left: 100px;
+	padding: 1px 15px 0;
+	position: relative;
+	text-align: left;
+	width: 566px;	
+}
+div.content_body
+{
+	background: url(m1.png) repeat-y;
+	float: left;
+	left: 100px;
+	margin: auto;
+	padding: 10px 20px 10px 20px;
+	position: relative;
+	text-align: center;
+	width: 536px;
+}
+div.content_bottom
+{
+	background: url(m2.png) no-repeat;
+	float: left;
+	height: 25px;
+	left: 100px;
+	position: relative;
+	width: 776px;
+}
+
+div.menu
+{
+	margin-bottom: auto;
+	background-position: center center;
+	width: 150px;
+	float: left;
+	font-size: medium;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-align: left;
+}
+
+#footer
+{
+	text-align: center;
+	margin: 0px;
+	padding: 5px 15px 5px 15px;
+	height: 20px;
+}
+div.country
+{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+#wrapper
+{
+	overflow: hidden;
+	float: left;
+}
+#menu
+{
+	margin-bottom: auto;
+	background-position: center center;
+	width: 130px;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	border-right-style: solid;
+	border-right-color: #445C69;
+	padding-right: 4px;
+}
+#content
+{
+	margin-top: 10px;
+	margin-left: 170px;
+	width: 810px;
+}
+div.login
+{
+	float: right;
+	position: relative;
+	right: 30px;
+	top: 50px;
+	width: 400px;
+	text-align: right;
+	color: #749DB1;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+

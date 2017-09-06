@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mapas>
+  <mapa nome="Danger Maze">
+    <jogador nome="Ana">
+      <score>10000</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>10000</score>
+    </jogador>
+    <jogador nome="Ana">
+      <score>10000</score>
+    </jogador>
+  </mapa>
+  <mapa nome="Labyrinth Boom">
+    <jogador nome="Xena">
+      <score>1334</score>
+    </jogador>
+    <jogador nome="JaneBob">
+      <score>1334</score>
+    </jogador>
+    <jogador nome="Ana">
+      <score>1334</score>
+    </jogador>
+  </mapa>
+  <mapa nome="Lost Maze X">
+    <jogador nome="Carlos">
+      <score>6771</score>
+    </jogador>
+    <jogador nome="Ana">
+      <score>6771</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>6771</score>
+    </jogador>
+  </mapa>
+  <mapa nome="ManVsRat 4">
+    <jogador nome="JaneBob">
+      <score>3314</score>
+    </jogador>
+    <jogador nome="Xena">
+      <score>3314</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>3314</score>
+    </jogador>
+  </mapa>
+  <mapa nome="Maze Killer">
+    <jogador nome="JaneBob">
+      <score>2734</score>
+    </jogador>
+    <jogador nome="Xena">
+      <score>2734</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>2734</score>
+    </jogador>
+  </mapa>
+  <mapa nome="Mountain Maze">
+    <jogador nome="JaneBob">
+      <score>7234</score>
+    </jogador>
+    <jogador nome="Xena">
+      <score>7234</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>7234</score>
+    </jogador>
+  </mapa>
+  <mapa nome="Psycho Maze">
+    <jogador nome="JaneBob">
+      <score>7132</score>
+    </jogador>
+    <jogador nome="Xena">
+      <score>7132</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>7132</score>
+    </jogador>
+  </mapa>
+  <mapa nome="QuickEscape 3">
+    <jogador nome="JaneBob">
+      <score>7234</score>
+    </jogador>
+    <jogador nome="Xena">
+      <score>7234</score>
+    </jogador>
+    <jogador nome="Carlos">
+      <score>7234</score>
+    </jogador>
+  </mapa>
+</mapas>
